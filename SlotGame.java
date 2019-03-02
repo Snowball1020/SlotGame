@@ -6,13 +6,13 @@ public class SlotGame {
 	public static void main(String[] args) {
 
 		//pre condition
-		int YourMoney = 500;
+		int YourMoney = 5000;
 
 		while (YourMoney > 0) {
 			int LeftMoney = YourMoney;
 
 			System.out.println("you have: " + YourMoney
-					+ " dollars left. Press Enter Key to start the game. (100 dollars for play)");
+					+ " dollars left. Press Enter Key to start the game. (1000 dollars for play)");
 			Scanner scanner = new Scanner(System.in);
 			scanner.nextLine();
 
@@ -41,15 +41,15 @@ public class SlotGame {
 						scanner.nextLine();
 
 						if (answer == answer2 && answer2 == answer3) {
-							System.out.println("Congratz!! Got 500 dollars!!");
-							YourMoney = YourMoney + 500;
+							System.out.println("Congratz!! Got 5000 dollars!!");
+							YourMoney = YourMoney + 5000;
 						}
 						else if (answer == answer2 || answer2 == answer3 || answer == answer3) {
-							YourMoney = YourMoney - 100;
+							YourMoney = YourMoney - 1000;
 							System.out.println("almost there!");
 						}
 						else {
-							YourMoney = YourMoney - 100;
+							YourMoney = YourMoney - 1000;
 							System.out.println("You lose. ");
 							System.out.println();
 
