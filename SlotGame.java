@@ -59,7 +59,7 @@ public class SlotGame {
 				}
 			}	
 		}
-		System.out.println("No more money to bet, you are Done");
+		System.out.println("No more money to bet. Game is over");
 	}
 }
 
